@@ -11,6 +11,10 @@ module.exports = {
         filename: 'direct.js',
         path: __dirname + '/build'
     },
+    devServer: {
+        contentBase: "./build",
+        port: 9000
+    },
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
